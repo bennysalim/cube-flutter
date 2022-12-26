@@ -1,0 +1,3 @@
+class CubePostAPI {
+  void getCubePostToAPI() {}
+}

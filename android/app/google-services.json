@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "519871621128",
+    "project_id": "cube-flutter",
+    "storage_bucket": "cube-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519871621128:android:958772dc6d0d16557c89bd",
+        "android_client_info": {
+          "package_name": "com.example.cube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519871621128-74b0si63qhl6kjq5jsa3mseojg704lkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6C2ODGLQsdYEZKHBbIsq1MTe1s5u_AM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519871621128-74b0si63qhl6kjq5jsa3mseojg704lkt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "519871621128-7o0t2ue9rvgb9ufd60l2anteklp8uanr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cube"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
