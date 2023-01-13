@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DarkTheme {
   static const Color colorPrimary = Color(0xff1b222b);
@@ -10,7 +11,7 @@ class DarkTheme {
       horizontal: 24,
       vertical: 10,
     ),
-    textStyle: const TextStyle(
+    textStyle: GoogleFonts.montserrat(
       fontSize: 14,
       color: colorSecondary,
       fontWeight: FontWeight.w600,

@@ -1,9 +1,26 @@
+import 'dart:async';
+
 import 'package:cube/themes/global_theme.dart';
+import 'package:cube/views/1.intro/2.onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   static const routeName = "/";
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    Timer(
+      const Duration(seconds: 2),
+      () => Navigator.of(context).pushNamed(OnboardingScreen.routeName),
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
