@@ -1,5 +1,5 @@
 import 'package:cube/themes/dark_theme.dart';
-import 'package:cube/views/2.auth/biodata_screen.dart';
+import 'package:cube/views/2.auth/2.biodata_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../themes/light_theme.dart';

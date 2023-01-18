@@ -1,7 +1,8 @@
 import 'package:cube/views/1.intro/2.onboarding_screen.dart';
 import 'package:cube/views/1.intro/1.splash_screen.dart';
-import 'package:cube/views/2.auth/auth_screen.dart';
-import 'package:cube/views/2.auth/biodata_screen.dart';
+import 'package:cube/views/2.auth/1.auth_screen.dart';
+import 'package:cube/views/2.auth/2.biodata_screen.dart';
+import 'package:cube/views/2.auth/3.profiling_screen.dart';
 import 'package:cube/views/3.app/1.home/home_screen.dart';
 import 'package:cube/views/3.app/2.search/search_screen.dart';
 import 'package:cube/views/3.app/3.add/add_post_screen.dart';
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(fontFamily: GoogleFonts.montserrat().fontFamily),
+      theme: ThemeData(
+          fontFamily: GoogleFonts.montserrat().fontFamily, useMaterial3: true),
       initialRoute: SplashScreen.routeName,
       routes: {
         //intro
@@ -43,6 +45,7 @@ class MyApp extends StatelessWidget {
         //auth
         AuthScreen.routeName: (context) => const AuthScreen(),
         BiodataScreen.routeName: (context) => const BiodataScreen(),
+        ProfilingScreen.routeName: (context) => const ProfilingScreen(),
         //1. home
         HomeScreen.routeName: (context) => const HomeScreen(),
         //2. search
