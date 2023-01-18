@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class LightTheme {
   static const Color colorSecondary = Color.fromRGBO(27, 34, 43, 1);
+  static const Color colorSecondaryLowOpacity =
+      Color.fromRGBO(27, 34, 43, 0.50);
   static const Color colorPrimary = Color.fromARGB(255, 255, 255, 255);
 
   static ButtonStyle primaryButton = ElevatedButton.styleFrom(

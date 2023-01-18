@@ -1,6 +1,7 @@
 import 'package:cube/themes/dark_theme.dart';
 import 'package:cube/themes/light_theme.dart';
 import 'package:cube/views/3.app/1.home/home_screen.dart';
+import 'package:cube/views/3.app/bottomnav_widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginWidget extends StatefulWidget {
@@ -67,11 +68,11 @@ class _LoginWidgetState extends State<LoginWidget> {
             hintText: "password",
             labelText: "password",
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: LightTheme.colorSecondary),
+              borderSide: const BorderSide(color: LightTheme.colorSecondary),
               borderRadius: BorderRadius.circular(10),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: LightTheme.colorSecondary),
+              borderSide: const BorderSide(color: LightTheme.colorSecondary),
               borderRadius: BorderRadius.circular(10),
             ),
             fillColor: const Color.fromRGBO(246, 246, 246, 1),
@@ -107,7 +108,11 @@ class _LoginWidgetState extends State<LoginWidget> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).pushNamed(HomeScreen.routeName);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const BottomNavWIdget(),
+                    ),
+                  );
                 },
                 style: DarkTheme.primaryButton.copyWith(
                   minimumSize: const MaterialStatePropertyAll(
